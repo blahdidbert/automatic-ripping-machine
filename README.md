@@ -131,7 +131,7 @@ sudo ln -s /opt/arm/arm.yaml /etc/arm/
 
 - Edit your "config" file (located at /opt/arm/arm.yaml) to determine what options you'd like to use.  Pay special attention to the 'directory setup' section and make sure the 'arm' user has write access to wherever you define these directories.
 
-- Edit the music config file (located at /home/arm/.abcde.conf)
+- Edit the music config file (located at /home/arm/.abcde.conf) paying special attention to `OUTPUTDIR=` (line 66). If this location is changed, wherever this location is, the `arm` user needs to have permission read and write over the entire root path.
 
 - To rip Blu-Rays after the MakeMKV trial is up you will need to purchase a license key or while MakeMKV is in BETA you can get a free key (which you will need to update from time to time) here:  https://www.makemkv.com/forum2/viewtopic.php?f=5&t=1053 and create /home/arm/.MakeMKV/settings.conf with the contents:
 
